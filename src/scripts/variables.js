@@ -5,7 +5,7 @@ import {
     selectionSort,
     mergeSort,
     quickSort
-} from "./sortingFunctions";
+} from "./sortingFunctions/index.js";
 
 export const
     wrapper = document.querySelector('.sort-chart'),

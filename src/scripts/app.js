@@ -10,8 +10,8 @@ import {
     wrapper
 } from "./variables.js";
 
-import {getSortFunctionByName} from "./utils";
-import {disableInputs, resetInputs} from "./controlFunctions";
+import {getSortFunctionByName} from "./utils/index.js";
+import {disableInputs, resetInputs} from "./controlFunctions/index.js";
 
 /**
  * Устанавливает стиль сетки для контейнера с графикой,

@@ -1,7 +1,7 @@
 import {
     delay,
     calculateDelayBySpeed
-} from "../utils";
+} from "../utils/index.js";
 
 /**
  * Асинхронная функция для сортировки массива столбцов методом сортировки вставками с задержкой.
