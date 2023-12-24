@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визуализация алгоритмов сортировки</title>
+    <link rel="shortcut icon" href="./src/assets/img/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="./src/assets/styles/layout.css">
+</head>
+<body>
+    <div class="sort">
+        <div class="sort-container">
+            <div class="sort-wrapper">
+                <div class="sort-controls">
+                    <div class="sort-settings">
+                        <label>
+                            <span>Метод сортировки:</span>
+                            <select id="algorithm">
+                            </select>
+                        </label>
+                        <label>
+                            <span>Размер массива:</span>
+                            <input type="number" id="numbers-count" value='100' placeholder="Введите число"
+                                   oninput="this.value = this.value.replace(/\D/g, '').slice(0,3)">
+                        </label>
+                        <label>
+                            <span>Скорость сортировки:</span>
+                            <input type="range" id="speed">
+                        </label>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" id='shuffle-button' class="btn-primary shuffle"></button>
+                        <button type="button" id='play-button' class="btn-primary play"></button>
+                    </div>
+                </div>
+                <div class="sort-chart">
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./src/scripts/app.js" type="module"></script>
+</body>
+</html>
